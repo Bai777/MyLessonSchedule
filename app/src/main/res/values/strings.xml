@@ -27,4 +27,6 @@
     <string name="math_image">math_image</string>
     <string name="image_literature">image_literature</string>
     <string name="greetings">Hi, Schoolboy!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
