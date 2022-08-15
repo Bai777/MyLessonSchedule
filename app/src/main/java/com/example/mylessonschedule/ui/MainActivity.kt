@@ -1,10 +1,10 @@
 package com.example.mylessonschedule.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.mylessonschedule.R
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import com.example.mylessonschedule.databinding.ActivityMainBinding
-import com.example.mylessonschedule.ui.fragmenthome.FragmentHome
+import com.example.mylessonschedule.ui.fragmenthome.HomeFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,12 +14,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        if (savedInstanceState == null){
-            startFragment(FragmentHome())
+        if (savedInstanceState == null) {
+            startFragment(HomeFragment())
         }
     }
 
-    private fun startFragment(fragmentHome: FragmentHome) {
+    fun startFragment(fragmentHome: Fragment) {
         supportFragmentManager.beginTransaction().replace(
             binding.container.id, fragmentHome
         ).commitNow()

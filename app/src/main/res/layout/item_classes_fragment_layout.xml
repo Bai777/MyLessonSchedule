@@ -19,7 +19,8 @@
             android:layout_margin="10dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="@string/image_math" />
 
         <TextView
             android:id="@+id/title"
